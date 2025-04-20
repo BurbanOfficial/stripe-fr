@@ -48,7 +48,7 @@ let selectedSize = "";
 
     // Fonction pour les tailles indisponibles
     function indisponible() {
-        alert("This product is currently unavailable.");
+        alert("Ce produit est momentanément indisponible.");
     }
 
     // Fonction pour mettre à jour l'affichage de la barre de prix en temps réel
@@ -90,7 +90,7 @@ let selectedSize = "";
 
     // Message d'alerte si aucun produit n'est visible
     if (visibleCount === 0) {
-        alert("No products match the selected filters.");
+        alert("Aucun produit trouvé avec les filtres sélectionnés.");
     }
 }
 
@@ -139,10 +139,10 @@ function toggleFilterMenu() {
     // Basculer entre ouvert et fermé
     if (filterPanel.classList.contains("active")) {
         filterPanel.classList.remove("active");
-        filterToggleButton.textContent = "Filters"; // Texte lorsque fermé
+        filterToggleButton.textContent = "Filtres"; // Texte lorsque fermé
     } else {
         filterPanel.classList.add("active");
-        filterToggleButton.textContent = "Close Filters"; // Texte lorsque ouvert
+        filterToggleButton.textContent = "Fermer"; // Texte lorsque ouvert
     }
 }
 

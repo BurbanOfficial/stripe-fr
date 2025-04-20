@@ -314,7 +314,7 @@ app.listen(PORT, () => console.log(`Serveur démarré sur le port ${PORT}`));
 
 // Code pour garder le serveur actif en se pinguant régulièrement
 const https = require('https'); // Utilisation du module https pour les requêtes sécurisées
-const SERVER_URL = 'https://burban-stripe-service.onrender.com'; // Remplacez par l'URL publique de votre app
+const SERVER_URL = 'https://burban-stripe-service-fr.onrender.com'; // Remplacez par l'URL publique de votre app
 
 function pingSelf() {
   https.get(SERVER_URL, (res) => {
